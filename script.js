@@ -7,6 +7,29 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+
+(function() {
+    var sec = 60;
+    function startTimer(){
+        console.log('timer suppose to go')
+        var timer = setInterval(function(){
+            sec--;
+            document.getElementById('timerDisplay').innerHTML='00:'+sec;
+            if (sec < 0) {
+                clearInterval(timer);
+                alert("Time is up!")
+            }
+        }, 1000);
+    }
+    document.getElementById('incorrect').addEventListener('click', function() {
+        sec -= 5;
+        document.getElementById('timerDisplay').innerHTML='00:'+sec;
+    });
+    startTimer();
+})();
+
+
+
 //event listeners for buttons
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => { 
@@ -15,7 +38,7 @@ nextButton.addEventListener('click', () => {
 })
 
 
-//start game function, shuffle questions method is used to sort questions so they are arranged in random order each time
+//Start game function, shuffle questions method is used to sort questions so they are arranged in random order each time
 function startGame() {
     console.log('Start')
     startButton.classList.add('hide')
@@ -25,11 +48,13 @@ function startGame() {
     setNextQuestion()
 }
 
+//Next question function
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+//Show question function
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
