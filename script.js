@@ -1,4 +1,4 @@
-//declared needed variables
+//Declared needed variables
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -7,19 +7,20 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
-
+//Timer function
 (function() {
-    var sec = 60;
+    var sec = 75;
     function startTimer(){
-        console.log('timer suppose to go')
+        console.log('timer works')
         var timer = setInterval(function(){
             sec--;
             document.getElementById('timerDisplay').innerHTML='00:'+sec;
             if (sec < 0) {
                 clearInterval(timer);
-                alert("Time is up!")
+                alert("Sorry, Time is up!")
             }
         }, 1000);
+//Starts timer when start button is clicked
     }
     document.getElementById('incorrect').addEventListener('click', function() {
         sec -= 5;
@@ -28,23 +29,21 @@ let shuffledQuestions, currentQuestionIndex
     startTimer();
 })();
 
-
-
-//event listeners for buttons
-startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', () => { 
+//Event listeners for buttons
+    startButton.addEventListener('click', startGame)
+    nextButton.addEventListener('click', () => { 
     currentQuestionIndex++
     setNextQuestion()
 })
 
 
 //Start game function, shuffle questions method is used to sort questions so they are arranged in random order each time
-function startGame() {
-    console.log('Start')
-    startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
+    function startGame() {
+        console.log('Start')
+        startButton.classList.add('hide')
+        shuffledQuestions = questions.sort(() => Math.random() - .5)
+        currentQuestionIndex = 0
+        questionContainerElement.classList.remove('hide')
     setNextQuestion()
 }
 
@@ -69,7 +68,7 @@ function showQuestion(question) {
     })
 }
 
-
+//Reset function
 function resetState() {
     clearStatusClass(document.body)
     nextButton.classList.add('hide')
@@ -77,7 +76,7 @@ function resetState() {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
 }
 
-
+//Function for buttons
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
@@ -110,9 +109,7 @@ function clearStatusClass(element) {
 }
 
 
-
-
-//The questions for the quiz
+//The java questions for the quiz
 const questions = [
     { question: 'What is a string in Java?',
         answers: [
