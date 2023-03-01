@@ -11,6 +11,12 @@ I became more comfortable with using Java with things such as..<br>
 declaring variables, functions, setInterval, arrays and the DOM.
 
 
+# TECHNOLOGIES USED:
+*HTML
+<br>
+*CSS
+<br>
+*JAVASCRIPT
 
 # HELPFUL WEBSITES I USED
 https://www.oracle.com/
