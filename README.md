@@ -1,9 +1,7 @@
 # NO BRAINER JAVA
 
 # DETAILS
-This is a 75 second timed quiz with 4 Javascript questions.
-<br>
-At the end of the quiz you will be able to put your initials down to save your high score!
+This is a timed quiz with 4 Javascript questions.
 
 # WHAT I LEARNED..
 I became more familiar/comfortable with creating a css and HTML file.<br>

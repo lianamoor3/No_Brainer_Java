@@ -9,7 +9,7 @@ let shuffledQuestions, currentQuestionIndex
 
 //Timer function
 (function() {
-    var sec = 75;
+    var sec = 80;
     function startTimer(){
         console.log('timer works')
         var timer = setInterval(function(){
