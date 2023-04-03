@@ -12,14 +12,14 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(224, 121, 255);
 }
 
 .container {
     width: 800px;
     height: 300px;
     max-width: 80%;
-    background-color: rgb(101, 101, 247);
+    background-color: rgb(217, 42, 240);
     border-radius: 6px;
     padding: 12px;
     box-shadow: 0 0 10px 2px;
@@ -43,7 +43,7 @@ body {
 
 
 .btn:hover {
-    border-color: rgb(6, 135, 255);
+    border-color: rgb(166, 109, 192);
     font-weight: bold;
 }
 

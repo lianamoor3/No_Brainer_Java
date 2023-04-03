@@ -7,6 +7,7 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+
 //Timer function
 (function() {
     var sec = 80;
@@ -20,6 +21,8 @@ let shuffledQuestions, currentQuestionIndex
                 alert("Sorry, Time is up!")
             }
         }, 1000);
+
+
 //Starts timer when start button is clicked
     }
     document.getElementById('incorrect').addEventListener('click', function() {
@@ -109,7 +112,7 @@ function clearStatusClass(element) {
 }
 
 
-//The java questions for the quiz
+//The javascript questions for the quiz
 const questions = [
     { question: 'What is a string in Java?',
         answers: [
