@@ -146,4 +146,4 @@ const questions = [
             { text: '1996', correct: false},
             { text: '1989', correct: false},
         ]
-}]
+}];
