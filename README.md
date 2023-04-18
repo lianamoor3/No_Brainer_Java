@@ -10,13 +10,13 @@ declaring variables, functions, setInterval, arrays and the DOM.
 
 
 # TECHNOLOGIES USED:
-*HTML
+-HTML
 <br>
-*CSS
+-CSS
 <br>
-*JAVASCRIPT
+-JavaScript<br><br>
 
-# HELPFUL WEBSITES I USED
+Helpful websites used..<br>
 https://www.oracle.com/
 <br>
 https://www.w3schools.com/html/
