@@ -90,7 +90,7 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
     } else {
-        startButton.innerText ='Start Over'
+        startButton.innerText ='Game Over'
         startButton.classList.remove('hide')
     }
 } 
