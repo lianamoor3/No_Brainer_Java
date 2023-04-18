@@ -30,6 +30,17 @@ https://jsoup.org/apidocs/org/jsoup/nodes/Element.html
 
 
 # DEPLOYED WEBPAGE
-<a href="https://lianajayde.github.io/No_Brainer_Java/">No Brainer Java</a>
+<a href="https://lianajayde.github.io/No_Brainer_Java/">No Brainer Java</a><br>
+
+![one](https://user-images.githubusercontent.com/117928966/232643601-e3ac10b9-3ab2-48d6-b714-d90133e72fc1.jpg)
 <br>
-Screenshots Here
+![two](https://user-images.githubusercontent.com/117928966/232643632-d7fdf9da-56ac-4008-bd46-0660b299bf39.jpg)
+<br>
+![three](https://user-images.githubusercontent.com/117928966/232643666-8aef6dd6-9017-4a04-ba47-32e7501679e9.jpg)
+
+
+
+
+
+
+
